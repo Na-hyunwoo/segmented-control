@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { colors, typography } from "../styles";
+import { animated } from "@react-spring/web";
 
 export const Wrapper = styled.div<{ size: string; count: number }>`
   width: 100%;
@@ -27,7 +28,6 @@ export const Input = styled.input`
 export const Label = styled.label<{
   size: string;
   isActive: boolean;
-  disabled?: boolean;
 }>`
   text-align: center;
 
@@ -35,13 +35,11 @@ export const Label = styled.label<{
     size === "large"
       ? css`
           ${typography.t5};
-          padding: 8px 0px;
           border-radius: 10px;
         `
       : size === "small"
       ? css`
           ${typography.t6};
-          padding: 5px 0px;
           border-radius: 8px;
         `
       : ""}
@@ -49,15 +47,40 @@ export const Label = styled.label<{
   ${({ isActive }) =>
     isActive
       ? css`
+          font-weight: 700;
           color: ${colors.grey800};
-          font-weight: bold;
           background: #fff;
           box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.09);
         `
       : css`
+          font-weight: 500;
           color: ${colors.grey600};
-          font-weight: medium;
         `}
+`;
 
-	cursor: ${({ disabled }) => (disabled ? `not-allowed` : `pointer`)};
+export const AnimatedDiv = styled(animated.div)<{
+  size: "large" | "small", 
+  disabled?: boolean; 
+}>`
+  ${({ size }) =>
+    size === "large"
+      ? css`
+          padding: 8px 0px;
+          border-radius: 10px;
+        `
+      : size === "small"
+      ? css`
+          padding: 5px 0px;
+          border-radius: 8px;
+        `
+      : ""}
+
+  ${({ disabled }) =>
+    disabled
+      ? css`
+          cursor: not-allowed;
+        `
+      : css`
+          cursor: pointer;
+        `}
 `;
