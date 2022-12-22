@@ -61,8 +61,8 @@ export const MotionLabel = styled(motion.label)<{
       : tap 
       ? css`
           background-color: ${colors.greyOpacity100};
-          font-weight: 500;
-          color: ${colors.grey600};
+          font-weight: 600;
+          color: ${colors.grey800};
         `
       : css`
           background-color: ${colors.grey100};
