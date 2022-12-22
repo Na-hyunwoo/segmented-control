@@ -49,7 +49,7 @@ export const Label = styled.label<{
       ? css`
           font-weight: 700;
           color: ${colors.grey800};
-          background: #fff;
+          background: ${colors.white};
           box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.09);
         `
       : css`

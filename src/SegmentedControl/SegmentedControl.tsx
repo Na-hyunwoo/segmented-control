@@ -32,6 +32,10 @@ const SegmentedControl = ({
   };
 
   // TODO: disable된 animatedDiv의 font-weight가 동작하지 않도록 변경하기. 
+
+  // backgroundColor 애니메이션이 지저분하다. 다른거 먼저 하고올까. 일단, 선택된 segment가 애니메이션으로
+  // 동작하는 것을 먼저 하는게 맞을 것 같긴 하다. 그러면 코드가 좀 달라지지 않을까 싶긴 하다. 
+  // 그럼 그거 먼저 하고 오자. 
   const handleTouchStart = (touchedIndex: number, activeIndex: number) => {
     api.start(
       (index) =>
@@ -41,11 +45,15 @@ const SegmentedControl = ({
           from: {
             scale: 1,
             fontWeight: 500,
+            
+            backgroundColor: colors.grey100,
           },
           to: {
             scale: 0.9,
             fontWeight: 600,
             color: colors.grey800,
+
+            backgroundColor: colors.greyOpacity100,
           },
         }
     );
@@ -55,12 +63,11 @@ const SegmentedControl = ({
         touchedIndex !== activeIndex && {
           from: {
             scale: 1,
-          },
-          to: {
-            scale: 1,
             fontWeight: 500,
-            color: colors.grey600
-          },
+            color: colors.grey600,
+
+            backgroundColor: colors.grey100,
+          }
         }
     );
   };
@@ -74,10 +81,14 @@ const SegmentedControl = ({
           from: {
             scale: 0.9,
             fontWeight: 600,
+
+            backgroundColor: colors.greyOpacity100,
           },
           to: {
             scale: 1,
             fontWeight: 700,
+
+            backgroundColor: colors.white,
           },
         }
     );
