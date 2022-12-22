@@ -1,6 +1,12 @@
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { colors, spring } from "../styles";
-import { Wrapper, Input, MotionLabel } from "./SegmentedControl.styles";
+import { Dispatch, SetStateAction, useId, useState } from "react";
+import { spring } from "../styles";
+import {
+  Wrapper,
+  Input,
+  MotionLabel,
+  MotionWrapper,
+  SelectedBg,
+} from "./SegmentedControl.styles";
 
 interface Props {
   options: {
@@ -20,14 +26,16 @@ const SegmentedControl = ({
   name,
   defaultIndex,
 }: Props): JSX.Element => {
-  const [activeIndex, setActiveIndex] = useState<number>(defaultIndex);
+  const [selectedIndex, setSelectedIndex] = useState<number>(defaultIndex);
   const [tappingIndex, setTappingIndex] = useState<number>(-1);
+  const id = useId();
 
   const handleInputChange = (value: string, index: number) => {
-    setActiveIndex(index);
+    setSelectedIndex(index);
     setValue(value);
   };
 
+  // TODO: label과 bg 코드에서 중복되는 부분 줄일 수 있지 않을까 ?
   return (
     <Wrapper size={size} count={options.length}>
       {options.map((option, index) => (
@@ -36,33 +44,46 @@ const SegmentedControl = ({
           key={name + option.value}
           type="radio"
           id={name + option.value}
-          checked={index === activeIndex}
+          checked={index === selectedIndex}
           disabled={option.disabled}
           onChange={() => handleInputChange(option.value, index)}
         />
       ))}
       {options.map((option, index) => (
-        <MotionLabel
-          key={name + option.value}
-          htmlFor={name + option.value}
-          data-value={option.value}
-          size={size}
-          isActive={index === activeIndex}
-          disabled={option.disabled}
-          whileTap={{
-            scale: 0.9,
-            transition: spring.rapid,
-          }}
-          onTapStart={() => {
-            setTappingIndex(index);
-          }}
-          onTap={() => {
-            setTappingIndex(-1);
-          }}
-          tap={tappingIndex === index}
-        >
-          {option.value}
-        </MotionLabel>
+        <MotionWrapper size={size}>
+          <MotionLabel
+            key={name + option.value}
+            htmlFor={name + option.value}
+            data-value={option.value}
+            size={size}
+            isSelected={index === selectedIndex}
+            disabled={option.disabled}
+            whileTap={{
+              scale: 0.9,
+              transition: spring.rapid,
+            }}
+            onTapStart={() => {
+              setTappingIndex(index);
+            }}
+            onTap={() => {
+              setTappingIndex(-1);
+            }}
+            tap={tappingIndex === index}
+          >
+            {option.value}
+          </MotionLabel>
+          {index === selectedIndex && 
+            <SelectedBg 
+              size={size} 
+              layoutId={id} 
+              transition={{
+                layout: {
+                  stiffness: 1000,
+                  damping: 52,
+                },
+              }}
+            ></SelectedBg>}
+        </MotionWrapper>
       ))}
     </Wrapper>
   );
