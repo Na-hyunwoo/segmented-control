@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 import { colors, typography } from "../styles";
-import { animated } from "@react-spring/web";
+import { motion } from "framer-motion";
 
 export const Wrapper = styled.div<{ size: string; count: number }>`
   width: 100%;
-  background: ${colors.grey100};
+  background-color: ${colors.grey100};
   ${({ size }) =>
     size === "large" &&
     css`
@@ -25,55 +25,50 @@ export const Input = styled.input`
   display: none;
 `;
 
-export const Label = styled.label<{
-  size: string;
-  isActive: boolean;
+
+export const MotionLabel = styled(motion.label)<{
+  size: "large" | "small",
+  isActive: boolean,
+  disabled?: boolean; 
+  tap: boolean,
 }>`
   text-align: center;
+  background-color: ${colors.grey100};
 
   ${({ size }) =>
     size === "large"
       ? css`
+          padding: 8px 0px;
           ${typography.t5};
           border-radius: 10px;
         `
       : size === "small"
       ? css`
+          padding: 5px 0px;
           ${typography.t6};
           border-radius: 8px;
         `
       : ""}
 
-  ${({ isActive }) =>
+  ${({ isActive, tap }) =>
     isActive
       ? css`
           font-weight: 700;
           color: ${colors.grey800};
-          background: ${colors.white};
+          background-color: ${colors.white};
           box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.09);
         `
-      : css`
+      : tap 
+      ? css`
+          background-color: ${colors.greyOpacity100};
           font-weight: 500;
           color: ${colors.grey600};
-        `}
-`;
-
-export const AnimatedDiv = styled(animated.div)<{
-  size: "large" | "small", 
-  disabled?: boolean; 
-}>`
-  ${({ size }) =>
-    size === "large"
-      ? css`
-          padding: 8px 0px;
-          border-radius: 10px;
         `
-      : size === "small"
-      ? css`
-          padding: 5px 0px;
-          border-radius: 8px;
-        `
-      : ""}
+      : css`
+          background-color: ${colors.grey100};
+          font-weight: 500;
+          color: ${colors.grey600};
+      `}
 
   ${({ disabled }) =>
     disabled
