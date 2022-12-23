@@ -2,7 +2,7 @@
 
 불필요한 노드를 최소화 하기 위해 webpack으로 React + Typescript + Styled Components + Storybook을 세팅했습니다. 그리고 간단한 lint, prettier 설정도 추가했습니다.
 
-label과 input을 연결해웹 접근성을 고려한 개발을 하였습니다. 
+label과 input을 연결해 웹 접근성을 고려한 개발을 하였습니다. 
 
 framer-motion 라이브러리를 사용하여 애니메이션을 적용하였습니다. 
 
