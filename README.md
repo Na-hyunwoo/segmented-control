@@ -71,13 +71,3 @@ const App = () => {
 |size|`large or small`||Enter the size of component you want
 |name|`string`||Enter name of the radio <input>s
 |defaultIndex|`number`||You could set default value through this property
-
-
-options: {
-  value: string;
-  disabled?: boolean;
-}[];
-setValue: Dispatch<SetStateAction<string>>;
-size: "large" | "small";
-name: string;
-defaultIndex: number;
