@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { colors, typography } from "../../styles";
+import { colors, typography } from "../styles";
 import { motion } from "framer-motion";
 
 export const Wrapper = styled.div<{ size: string; count: number }>`

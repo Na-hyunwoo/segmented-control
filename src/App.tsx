@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { SegmentedControl } from "./lib/SegmentedControl";
+import { SegmentedControls } from "./lib";
 
 const App = () => {
   return (
     <>
-      <SegmentedControl
+      <SegmentedControls
         options={[
           { value: "one", disabled: true },
           { value: "two" },
@@ -15,7 +15,7 @@ const App = () => {
         size={"large"}
         name={"one"}
       />
-      <SegmentedControl
+      <SegmentedControls
         options={[
           { value: "one", disabled: true },
           { value: "two" },

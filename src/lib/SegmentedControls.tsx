@@ -1,12 +1,12 @@
 import React, { Dispatch, SetStateAction, useId, useState } from "react";
-import { spring } from "../../styles";
+import { spring } from "../styles";
 import {
   Wrapper,
   Input,
   MotionLabel,
   MotionWrapper,
   SelectedBg,
-} from "./SegmentedControl.styles";
+} from "./SegmentedControls.styles";
 
 interface Props {
   options: {
@@ -19,7 +19,7 @@ interface Props {
   defaultIndex: number;
 }
 
-const SegmentedControl = ({
+const SegmentedControls = ({
   options,
   setValue,
   size,
@@ -37,8 +37,8 @@ const SegmentedControl = ({
 
   // TODO: label과 bg 코드에서 중복되는 부분 줄일 수 있지 않을까 ?
   return (
-    <Wrapper size={size} count={options.length}>
-      {options.map((option, index) => (
+    <Wrapper size={size} count={options?.length}>
+      {options?.map((option, index) => (
         <Input
           name={name}
           key={name + option.value}
@@ -49,10 +49,9 @@ const SegmentedControl = ({
           onChange={() => handleInputChange(option.value, index)}
         />
       ))}
-      {options.map((option, index) => (
-        <MotionWrapper size={size}>
+      {options?.map((option, index) => (
+        <MotionWrapper key={name + option.value} size={size}>
           <MotionLabel
-            key={name + option.value}
             htmlFor={name + option.value}
             data-value={option.value}
             size={size}
@@ -72,21 +71,22 @@ const SegmentedControl = ({
           >
             {option.value}
           </MotionLabel>
-          {index === selectedIndex && 
-            <SelectedBg 
-              size={size} 
-              layoutId={id} 
+          {index === selectedIndex && (
+            <SelectedBg
+              size={size}
+              layoutId={id}
               transition={{
                 layout: {
                   stiffness: 1000,
                   damping: 52,
                 },
               }}
-            ></SelectedBg>}
+            ></SelectedBg>
+          )}
         </MotionWrapper>
       ))}
     </Wrapper>
   );
 };
 
-export default SegmentedControl;
+export default SegmentedControls;
