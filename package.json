@@ -1,7 +1,7 @@
 {
-  "name": "toss-segmented-control",
+  "name": "segmented-controls",
   "version": "1.0.0",
-  "description": "",
+  "description": "A good-lookin' segmented control React component 🔥",
   "main": "index.js",
   "scripts": {
     "prod": "NODE_ENV=production webpack serve",
@@ -13,7 +13,7 @@
     "build-storybook": "build-storybook"
   },
   "keywords": [],
-  "author": "",
+  "author": "Na-hyunwoo",
   "license": "ISC",
   "dependencies": {
     "framer-motion": "^8.0.1",
@@ -52,5 +52,13 @@
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Na-hyunwoo/segmented-control.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Na-hyunwoo/segmented-control/issues"
+  },
+  "homepage": "https://github.com/Na-hyunwoo/segmented-control#readme"
 }
