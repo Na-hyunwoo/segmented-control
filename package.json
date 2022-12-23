@@ -9,7 +9,7 @@
   "scripts": {
     "prod": "NODE_ENV=production webpack serve",
     "dev": "NODE_ENV=development webpack serve",
-    "build": "NODE_ENV=productions webpack",
+    "build": "NODE_ENV=production webpack",
     "prepare": "rm -rf dist && mkdir dist && tsc",
     "lint": "eslint --cache --fix .",
     "format": "prettier --write .",
