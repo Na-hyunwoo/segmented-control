@@ -1,18 +1,22 @@
 {
-  "name": "segmented-controls",
+  "name": "segmented-controls-react",
   "version": "1.0.0",
   "description": "A good-lookin' segmented control React component 🔥",
-  "main": "index.js",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "./browser/specific/main.js",
   "scripts": {
     "prod": "NODE_ENV=production webpack serve",
     "dev": "NODE_ENV=development webpack serve",
     "build": "NODE_ENV=productions webpack",
+    "prepare": "rm -rf dist && mkdir dist && tsc",
     "lint": "eslint --cache --fix .",
     "format": "prettier --write .",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "keywords": [],
+  "keywords": ["react", "component", "segmented-controls"],
   "author": "Na-hyunwoo",
   "license": "ISC",
   "dependencies": {

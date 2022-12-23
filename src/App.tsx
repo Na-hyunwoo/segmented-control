@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { SegmentedControl } from "./SegmentedControl";
+import React, { useState } from "react";
+import { SegmentedControl } from "./lib/SegmentedControl";
 
 const App = () => {
   return (

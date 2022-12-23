@@ -1,5 +1,5 @@
-import { Dispatch, SetStateAction, useId, useState } from "react";
-import { spring } from "../styles";
+import React, { Dispatch, SetStateAction, useId, useState } from "react";
+import { spring } from "../../styles";
 import {
   Wrapper,
   Input,
