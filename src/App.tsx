@@ -15,7 +15,7 @@ const App = () => {
         size={"large"}
         name={"one"}
       />
-      <div style={{marginTop: "100px"}}></div>
+      <div style={{ marginTop: "100px" }}></div>
       <SegmentedControls
         options={[
           { value: "one", disabled: true },
