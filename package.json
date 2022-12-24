@@ -1,6 +1,6 @@
 {
   "name": "segmented-controls-react",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A good-lookin' segmented control React component 🔥",
   "private": false,
   "main": "dist/index.js",
