@@ -29,20 +29,20 @@ ThreeSegments.args = {
   defaultIndex: 1,
   setValue: (val: string) => console.log(val),
   size: "large",
-  name: "one"
+  name: "three"
 };
 
 export const FourSegments = Template.bind({});
 FourSegments.args = {
   options: [
-    { value: "one", disabled: true },
+    { value: "one" },
     { value: "two" },
     { value: "three" },
-    { value: "four" },
+    { value: "four", disabled: true  },
   ],
   defaultIndex: 2,
   setValue: (val: string) => console.log(val),
   size: "small",
-  name: "two"
+  name: "four"
 };
 

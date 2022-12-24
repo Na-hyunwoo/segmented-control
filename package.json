@@ -14,14 +14,17 @@
     "lint": "eslint --cache --fix .",
     "format": "prettier --write .",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=511a87eea3b0"
   },
   "keywords": [
     "react",
     "component",
     "segmented-controls"
   ],
-  "author": "Na-hyunwoo",
+  "author": {
+    "name": "Na-hyunwoo"
+  },
   "license": "ISC",
   "dependencies": {
     "framer-motion": "^8.0.1",
@@ -45,6 +48,7 @@
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",
     "babel-loader": "^8.3.0",
+    "chromatic": "^6.14.0",
     "eslint": "^8.30.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
@@ -68,5 +72,7 @@
   "bugs": {
     "url": "https://github.com/Na-hyunwoo/segmented-control/issues"
   },
-  "homepage": "https://github.com/Na-hyunwoo/segmented-control#readme"
+  "homepage": "https://github.com/Na-hyunwoo/segmented-control#readme",
+  "readme": "ERROR: No README data found!",
+  "_id": "segmented-controls-react@1.0.9"
 }
