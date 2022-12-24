@@ -59,6 +59,8 @@ const App = () => {
 
 ## 결과물
 
+[Demo](https://63a6e1c767126194e2a4a9aa-cbgjyhyetq.chromatic.com/?path=/story/segmentedcontrols--three-segments)
+
 ![](https://velog.velcdn.com/images/dusdjeks/post/69213a67-6062-4c34-bacf-756526c61826/image.gif)
 
 ![](https://velog.velcdn.com/images/dusdjeks/post/7e340608-a6ea-4693-9e85-d08f76883e54/image.gif)
