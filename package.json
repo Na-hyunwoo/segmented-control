@@ -1,9 +1,9 @@
 {
   "name": "segmented-controls-react",
-  "version": "1.0.10",
+  "version": "1.0.18",
   "description": "A good-lookin' segmented control React component 🔥",
   "private": false,
-  "main": "dist/index.js",
+  "main": "dist/components/index.js",
   "types": "dist/index.d.ts",
   "browser": "./browser/specific/main.js",
   "scripts": {
