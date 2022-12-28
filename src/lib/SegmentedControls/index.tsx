@@ -6,7 +6,7 @@ import {
   MotionLabel,
   MotionWrapper,
   SelectedBg,
-} from "./SegmentedControls.styles";
+} from "./styled";
 
 interface Props {
   options: {

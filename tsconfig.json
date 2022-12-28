@@ -99,5 +99,5 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
-  "include": ["./src/lib"]
+  "include": ["./src/lib", "src/lib/SegmentedControls/styles", "src/lib/SegmentedControls/styles"]
 }

@@ -1,1 +1,1 @@
-export { SegmentedControls } from "./components";
+export { default as SegmentedControls } from "./SegmentedControls";
