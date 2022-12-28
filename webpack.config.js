@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = () => {
   const isDevelopment = process.env.NODE_ENV === "productions";
@@ -36,6 +37,12 @@ module.exports = () => {
       new HtmlWebpackPlugin({
         template: "public/index.html",
       }),
+      new BundleAnalyzerPlugin({
+        analyzerMode: "static",
+        openAnalyzer: false,
+        generateStatsFile: true,
+        statsFilename: "bundle-report.json",
+      })
     ],
   };
 };
