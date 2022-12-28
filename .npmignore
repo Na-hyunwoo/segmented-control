@@ -1,5 +1,4 @@
-node_modules/
-src/
-public/
-tsconfig.json
-storybook-static/
+*
+**/*
+!dist/**
+!LICENSE.md
