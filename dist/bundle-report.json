@@ -1,14 +1,13 @@
 {
-  "hash": "06236b07ef5909f2103b",
+  "hash": "7ea981dc605a23001006",
   "version": "5.75.0",
-  "time": 2539,
-  "builtAt": 1672205362147,
+  "time": 3987,
+  "builtAt": 1672205884524,
   "publicPath": "auto",
   "outputPath": "/Users/wrtn/assignment/toss-segmented-control/dist",
   "assetsByChunkName": {
     "main": [
-      "bundle.js",
-      "179.2f9415328bb31038c24d.hot-update.js"
+      "bundle.js"
     ]
   },
   "assets": [
@@ -184,62 +183,6 @@
     },
     {
       "type": "asset",
-      "name": "179.2f9415328bb31038c24d.hot-update.js",
-      "size": 177,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true,
-        "fullhash": "2f9415328bb31038c24d",
-        "minimized": true,
-        "related": {
-          "sourceMap": "179.2f9415328bb31038c24d.hot-update.js.map"
-        },
-        "size": 177
-      },
-      "chunkNames": [
-        "main"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 0,
-      "related": [
-        {
-          "type": "sourceMap",
-          "name": "179.2f9415328bb31038c24d.hot-update.js.map",
-          "size": 308,
-          "emitted": true,
-          "comparedForEmit": false,
-          "cached": false,
-          "info": {
-            "development": true,
-            "size": 308
-          },
-          "chunkNames": [],
-          "chunkIdHints": [],
-          "auxiliaryChunkNames": [
-            "main"
-          ],
-          "auxiliaryChunkIdHints": [],
-          "related": {},
-          "chunks": [],
-          "auxiliaryChunks": [
-            179
-          ],
-          "isOverSizeLimit": false
-        }
-      ],
-      "chunks": [
-        179
-      ],
-      "auxiliaryChunks": [],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
       "name": "lib/styles/index.d.ts",
       "size": 121,
       "emitted": true,
@@ -297,28 +240,6 @@
     },
     {
       "type": "asset",
-      "name": "main.2f9415328bb31038c24d.hot-update.json",
-      "size": 25,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true,
-        "fullhash": "2f9415328bb31038c24d",
-        "size": 25
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [],
-      "auxiliaryChunks": [],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
       "name": "index.d.ts",
       "size": 11,
       "emitted": true,
@@ -356,14 +277,12 @@
         "main"
       ],
       "files": [
-        "bundle.js",
-        "179.2f9415328bb31038c24d.hot-update.js"
+        "bundle.js"
       ],
       "auxiliaryFiles": [
-        "179.2f9415328bb31038c24d.hot-update.js.map",
         "bundle.js.map"
       ],
-      "hash": "f2720f0980fb250cdf5a",
+      "hash": "9d89ff8be28c429da4c4",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [],
@@ -59165,26 +59084,18 @@
         {
           "name": "bundle.js",
           "size": 439109
-        },
-        {
-          "name": "179.2f9415328bb31038c24d.hot-update.js",
-          "size": 177
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 439286,
+      "assetsSize": 439109,
       "auxiliaryAssets": [
-        {
-          "name": "179.2f9415328bb31038c24d.hot-update.js.map",
-          "size": 308
-        },
         {
           "name": "bundle.js.map",
           "size": 1530278
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 1530586,
+      "auxiliaryAssetsSize": 1530278,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": true
@@ -59200,26 +59111,18 @@
         {
           "name": "bundle.js",
           "size": 439109
-        },
-        {
-          "name": "179.2f9415328bb31038c24d.hot-update.js",
-          "size": 177
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 439286,
+      "assetsSize": 439109,
       "auxiliaryAssets": [
-        {
-          "name": "179.2f9415328bb31038c24d.hot-update.js.map",
-          "size": 308
-        },
         {
           "name": "bundle.js.map",
           "size": 1530278
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 1530586,
+      "auxiliaryAssetsSize": 1530278,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": true
@@ -59230,25 +59133,25 @@
   "warnings": [
     {
       "message": "asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  bundle.js (429 KiB)",
-      "stack": "AssetsOverSizeLimitWarning: asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  bundle.js (429 KiB)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:134:7\n    at Hook.eval [as callAsync] (eval at create (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/Compiler.js:882:27\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/neo-async/async.js:2818:7\n    at done (/Users/wrtn/assignment/toss-segmented-control/node_modules/neo-async/async.js:3522:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/Compiler.js:736:33\n    at Immediate.<anonymous> (/Users/wrtn/assignment/toss-segmented-control/node_modules/memfs/lib/volume.js:701:13)\n    at processImmediate (node:internal/timers:464:21)"
+      "stack": "AssetsOverSizeLimitWarning: asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  bundle.js (429 KiB)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:134:7\n    at Hook.eval [as callAsync] (eval at create (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/Hook.js:18:14)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/Compiler.js:882:27\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/neo-async/async.js:2818:7\n    at done (/Users/wrtn/assignment/toss-segmented-control/node_modules/neo-async/async.js:3522:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/Compiler.js:736:33\n    at Immediate.<anonymous> (/Users/wrtn/assignment/toss-segmented-control/node_modules/memfs/lib/volume.js:701:13)\n    at processImmediate (node:internal/timers:464:21)"
     },
     {
-      "message": "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (429 KiB)\n      bundle.js\n      179.2f9415328bb31038c24d.hot-update.js\n",
-      "stack": "EntrypointsOverSizeLimitWarning: entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (429 KiB)\n      bundle.js\n      179.2f9415328bb31038c24d.hot-update.js\n\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:139:7\n    at Hook.eval [as callAsync] (eval at create (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/Compiler.js:882:27\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/neo-async/async.js:2818:7\n    at done (/Users/wrtn/assignment/toss-segmented-control/node_modules/neo-async/async.js:3522:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/Compiler.js:736:33\n    at Immediate.<anonymous> (/Users/wrtn/assignment/toss-segmented-control/node_modules/memfs/lib/volume.js:701:13)\n    at processImmediate (node:internal/timers:464:21)"
+      "message": "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (429 KiB)\n      bundle.js\n",
+      "stack": "EntrypointsOverSizeLimitWarning: entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (429 KiB)\n      bundle.js\n\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:139:7\n    at Hook.eval [as callAsync] (eval at create (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/Hook.js:18:14)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/Compiler.js:882:27\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/neo-async/async.js:2818:7\n    at done (/Users/wrtn/assignment/toss-segmented-control/node_modules/neo-async/async.js:3522:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/Compiler.js:736:33\n    at Immediate.<anonymous> (/Users/wrtn/assignment/toss-segmented-control/node_modules/memfs/lib/volume.js:701:13)\n    at processImmediate (node:internal/timers:464:21)"
     },
     {
       "message": "webpack performance recommendations: \nYou can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.\nFor more info visit https://webpack.js.org/guides/code-splitting/",
-      "stack": "NoAsyncChunksWarning: webpack performance recommendations: \nYou can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.\nFor more info visit https://webpack.js.org/guides/code-splitting/\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:153:21\n    at Hook.eval [as callAsync] (eval at create (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/Compiler.js:882:27\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/neo-async/async.js:2818:7\n    at done (/Users/wrtn/assignment/toss-segmented-control/node_modules/neo-async/async.js:3522:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/Compiler.js:736:33\n    at Immediate.<anonymous> (/Users/wrtn/assignment/toss-segmented-control/node_modules/memfs/lib/volume.js:701:13)\n    at processImmediate (node:internal/timers:464:21)"
+      "stack": "NoAsyncChunksWarning: webpack performance recommendations: \nYou can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.\nFor more info visit https://webpack.js.org/guides/code-splitting/\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:153:21\n    at Hook.eval [as callAsync] (eval at create (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/Hook.js:18:14)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/Compiler.js:882:27\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/neo-async/async.js:2818:7\n    at done (/Users/wrtn/assignment/toss-segmented-control/node_modules/neo-async/async.js:3522:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/wrtn/assignment/toss-segmented-control/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at /Users/wrtn/assignment/toss-segmented-control/node_modules/webpack/lib/Compiler.js:736:33\n    at Immediate.<anonymous> (/Users/wrtn/assignment/toss-segmented-control/node_modules/memfs/lib/volume.js:701:13)\n    at processImmediate (node:internal/timers:464:21)"
     }
   ],
   "warningsCount": 3,
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "8928c129f59541dbdc8d",
+      "hash": "c0a5f08ef323bc55737e",
       "version": "5.75.0",
-      "time": 19,
-      "builtAt": 1672205359642,
+      "time": 66,
+      "builtAt": 1672205880620,
       "publicPath": "",
       "outputPath": "/Users/wrtn/assignment/toss-segmented-control/dist",
       "assetsByChunkName": {},
@@ -59265,17 +59168,17 @@
             "runtime": 440
           },
           "names": [
-            "HtmlWebpackPlugin_0-4"
+            "HtmlWebpackPlugin_0-0"
           ],
           "idHints": [],
           "runtime": [
-            "HtmlWebpackPlugin_0-4"
+            "HtmlWebpackPlugin_0-0"
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "f117db158dcd24dc516f",
+          "hash": "c6afcc1108617b9ead1c",
           "childrenByOrder": {},
-          "id": 549,
+          "id": 563,
           "siblings": [],
           "parents": [],
           "children": [],
@@ -59312,7 +59215,7 @@
               "id": 759,
               "issuerId": null,
               "chunks": [
-                549
+                563
               ],
               "assets": [],
               "reasons": [
@@ -59340,7 +59243,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "/Users/wrtn/assignment/toss-segmented-control/node_modules/html-webpack-plugin/lib/loader.js!/Users/wrtn/assignment/toss-segmented-control/public/index.html",
-                  "loc": "HtmlWebpackPlugin_0-4",
+                  "loc": "HtmlWebpackPlugin_0-0",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -59399,7 +59302,7 @@
               "id": 163,
               "issuerId": null,
               "chunks": [
-                549
+                563
               ],
               "assets": [],
               "reasons": [
@@ -59413,7 +59316,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
-                  "loc": "HtmlWebpackPlugin_0-4",
+                  "loc": "HtmlWebpackPlugin_0-0",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -59452,7 +59355,7 @@
               "warnings": 0,
               "id": "",
               "chunks": [
-                549
+                563
               ],
               "assets": [],
               "reasons": [],
@@ -59488,7 +59391,7 @@
               "warnings": 0,
               "id": "",
               "chunks": [
-                549
+                563
               ],
               "assets": [],
               "reasons": [],
@@ -59524,7 +59427,7 @@
               "warnings": 0,
               "id": "",
               "chunks": [
-                549
+                563
               ],
               "assets": [],
               "reasons": [],
@@ -59539,14 +59442,14 @@
               "module": "",
               "moduleIdentifier": "",
               "moduleName": "",
-              "loc": "HtmlWebpackPlugin_0-4",
+              "loc": "HtmlWebpackPlugin_0-0",
               "request": "/Users/wrtn/assignment/toss-segmented-control/node_modules/html-webpack-plugin/lib/loader.js!/Users/wrtn/assignment/toss-segmented-control/public/index.html"
             },
             {
               "module": "",
               "moduleIdentifier": "",
               "moduleName": "",
-              "loc": "HtmlWebpackPlugin_0-4",
+              "loc": "HtmlWebpackPlugin_0-0",
               "request": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;"
             }
           ]
@@ -59584,7 +59487,7 @@
           "id": 163,
           "issuerId": null,
           "chunks": [
-            549
+            563
           ],
           "assets": [],
           "reasons": [
@@ -59598,7 +59501,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
-              "loc": "HtmlWebpackPlugin_0-4",
+              "loc": "HtmlWebpackPlugin_0-0",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -59641,7 +59544,7 @@
           "id": 759,
           "issuerId": null,
           "chunks": [
-            549
+            563
           ],
           "assets": [],
           "reasons": [
@@ -59669,7 +59572,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "/Users/wrtn/assignment/toss-segmented-control/node_modules/html-webpack-plugin/lib/loader.js!/Users/wrtn/assignment/toss-segmented-control/public/index.html",
-              "loc": "HtmlWebpackPlugin_0-4",
+              "loc": "HtmlWebpackPlugin_0-0",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -59722,7 +59625,7 @@
           "warnings": 0,
           "id": "",
           "chunks": [
-            549
+            563
           ],
           "assets": [],
           "reasons": [],
@@ -59757,7 +59660,7 @@
           "warnings": 0,
           "id": "",
           "chunks": [
-            549
+            563
           ],
           "assets": [],
           "reasons": [],
@@ -59792,7 +59695,7 @@
           "warnings": 0,
           "id": "",
           "chunks": [
-            549
+            563
           ],
           "assets": [],
           "reasons": [],
@@ -59803,10 +59706,10 @@
         }
       ],
       "entrypoints": {
-        "HtmlWebpackPlugin_0-4": {
-          "name": "HtmlWebpackPlugin_0-4",
+        "HtmlWebpackPlugin_0-0": {
+          "name": "HtmlWebpackPlugin_0-0",
           "chunks": [
-            549
+            563
           ],
           "assets": [],
           "filteredAssets": 0,
@@ -59820,10 +59723,10 @@
         }
       },
       "namedChunkGroups": {
-        "HtmlWebpackPlugin_0-4": {
-          "name": "HtmlWebpackPlugin_0-4",
+        "HtmlWebpackPlugin_0-0": {
+          "name": "HtmlWebpackPlugin_0-0",
           "chunks": [
-            549
+            563
           ],
           "assets": [],
           "filteredAssets": 0,
