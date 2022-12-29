@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useId, useState } from "react";
+import React, { ReactNode, useId, useState } from "react";
 import { spring } from "../styles";
 import {
   Wrapper,
@@ -8,17 +8,6 @@ import {
   SelectedBg,
 } from "./styled";
 import { Props } from "./type";
-
-// {
-//   options: {
-//     value: string;
-//     disabled?: boolean;
-//   }[];
-//   setValue: Dispatch<SetStateAction<string>>;
-//   size: "large" | "small";
-//   name: string;
-//   defaultIndex: number;
-// }
 
 /**
  * 
@@ -72,7 +61,7 @@ const SegmentedControls = ({
   size,
   name,
   defaultIndex,
-}: Props): JSX.Element => {
+}: Props): ReactNode => {
   const [selectedIndex, setSelectedIndex] = useState<number>(defaultIndex);
   const [tappingIndex, setTappingIndex] = useState<number>(-1);
   const id = useId();
