@@ -8,9 +8,9 @@ framer-motion 라이브러리를 사용하여 애니메이션을 적용하였습
 
 모바일 환경에서도 동일한 사용감을 제공합니다.
 
-SSR을 위한 CJS, 동적 import를 통해 Tree-shaking을 하기 위한 ESM, 두 가지 Module System을 지원합니다. 
-
 개발자 경험을 위해 tsDoc을 추가하였습니다.
+
+SSR을 위한 CJS, 동적 import를 통해 Tree-shaking을 하기 위한 ESM, 두 가지 Module System을 지원합니다. -> 해당 기능 잠시 보류입니다. 
 ## 실행 방법
 
 1. package install

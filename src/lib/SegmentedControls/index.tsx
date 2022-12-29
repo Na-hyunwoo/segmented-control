@@ -1,4 +1,4 @@
-import React, { ReactNode, useId, useState } from "react";
+import React, { Dispatch, SetStateAction, useId, useState } from "react";
 import { spring } from "../styles";
 import {
   Wrapper,
@@ -7,7 +7,17 @@ import {
   MotionWrapper,
   SelectedBg,
 } from "./styled";
-import { Props } from "./type";
+
+export interface Props {
+  options: {
+    value: string;
+    disabled?: boolean;
+  }[];
+  setValue: Dispatch<SetStateAction<string>>;
+  size: "large" | "small";
+  name: string;
+  defaultIndex: number;
+}
 
 /**
  * 
@@ -19,7 +29,7 @@ import { Props } from "./type";
  * @example
  * ```jsx
   import React from "react";
-  import { SegmentedControls } from "./lib";
+  import { SegmentedControls } from "segmented-controls-react";
 
   const App = () => {
     return (
@@ -34,19 +44,6 @@ import { Props } from "./type";
           setValue={(val) => console.log(val)}
           size={"large"}
           name={"one"}
-        />
-        <div style={{ marginTop: "100px" }}></div>
-        <SegmentedControls
-          options={[
-            { value: "one", disabled: true },
-            { value: "two" },
-            { value: "three" },
-            { value: "four" },
-          ]}
-          defaultIndex={1}
-          setValue={(val) => console.log(val)}
-          size={"small"}
-          name={"two"}
         />
       </>
     );
