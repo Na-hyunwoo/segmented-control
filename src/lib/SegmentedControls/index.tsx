@@ -61,7 +61,7 @@ const SegmentedControls = ({
   size,
   name,
   defaultIndex,
-}: Props): ReactNode => {
+}: Props): JSX.Element => {
   const [selectedIndex, setSelectedIndex] = useState<number>(defaultIndex);
   const [tappingIndex, setTappingIndex] = useState<number>(-1);
   const id = useId();
