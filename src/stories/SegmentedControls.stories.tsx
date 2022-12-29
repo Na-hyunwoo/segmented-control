@@ -1,23 +1,13 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React from "react";
 import { SegmentedControls } from "../lib";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 export default {
   title: "SegmentedControls",
   component: SegmentedControls,
-};
+} as ComponentMeta<typeof SegmentedControls>;
 
-interface Props {
-  options: {
-    value: string;
-    disabled?: boolean;
-  }[];
-  setValue: Dispatch<SetStateAction<string>>;
-  size: "large" | "small";
-  name: string;
-  defaultIndex: number;
-}
-
-const Template = (args: Props) => <SegmentedControls {...args} />;
+const Template: ComponentStory<typeof SegmentedControls> = (args) => <SegmentedControls {...args} />;
 
 export const ThreeSegments = Template.bind({});
 ThreeSegments.args = {
