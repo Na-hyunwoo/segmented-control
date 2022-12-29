@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useId, useState } from "react";
+import React, { useId, useState } from "react";
 import { spring } from "../styles";
 import {
   Wrapper,
@@ -7,17 +7,7 @@ import {
   MotionWrapper,
   SelectedBg,
 } from "./styled";
-
-interface Props {
-  options: {
-    value: string;
-    disabled?: boolean;
-  }[];
-  setValue: Dispatch<SetStateAction<string>>;
-  size: "large" | "small";
-  name: string;
-  defaultIndex: number;
-}
+import { Props } from "./type";
 
 const SegmentedControls = ({
   options,
